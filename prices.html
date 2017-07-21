@@ -67,7 +67,23 @@
 							От 100 до 200 USD в час.
 							</blockquote>
 
-							</p>
+							<p>
+								<!-- <input type="range" max="10" min="1" value="5" step="1"> -->
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="price" id="price" value="" placeholder="Цена" />
+											</div>
+											<div class="12u$">
+												<div class="select-wrapper">
+													<select name="demo-category" id="demo-category">
+														<option value="">- Примеры ценовых предложений -</option>
+														<option value="1" onselect="alert('x');$('input.price').val('96 000 руб, без НДС')">Минимальный уровень технической поддержки</option>
+														<option value="1">Shipping</option>
+														<option value="1">Administration</option>
+														<option value="1">Human Resources</option>
+													</select>
+												</div>
+											</div>								
+						    </p>
 						</div>
 					</div>
 
@@ -96,6 +112,12 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script>
+			$( ":input" ).select(function() {
+			  alert( "Something was selected" );
+			});
+			</script>
 
 	</body>
 </html>
