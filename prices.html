@@ -69,19 +69,25 @@
 							</p>
 							<p>
 											<div class="12u 12u$(xsmall)">
-												<input type="text" name="price" id="price" value="" placeholder="Цена" />
+												<input type="text" name="price" id="price" value="" placeholder="Цена" readonly="readonly"/>
 											</div>
 											<div class="12u$">
 												<div class="select-wrapper">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Примеры ценовых предложений -</option>
-														<option value="1" onselect="alert('x');$('input.price').val('96 000 руб, без НДС')">Минимальный уровень технической поддержки</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
+													<select name="demo-category" id="demo-category" onchange="if(this.options[this.selectedIndex].value==0){$('#price').val('');$('#desc').text('');} if(this.options[this.selectedIndex].value==1){$('#price').val('120 000 рублей в месяц, без НДС'); $('#desc').text('Не более 90 устройств (коммутаторы/маршрутизаторы с поддержкой функционала L2-L3), 8x5 по некритичным и 24х7 по критичным вопросам, не более 40 запросов в месяц и не более 80 часов в месяц.');} if(this.options[this.selectedIndex].value==2){$('#price').val('680 000 руб, без НДС');$('#desc').text('Дизайн, спецификация, настройка оборудования, тестирование и  документирование, не более 20 устройств (коммутаторы/маршрутизаторы с поддержкой функционала L2-L3, например, 4 ядро и 16 распределенный-доступ), со сроком ориентировочно 4 месяца.');} if(this.options[this.selectedIndex].value==3){$('#price').val('960 000 руб, без НДС');$('#desc').text('Предпроектный анализ, дизайн, спецификация, настройка, тестирование и документирование, не более 30 устройств (коммутаторы/маршрутизаторы с поддержкой функционала L2-L3, уровень ядра), со сроком ориентировочно 3 месяца.');}">
+														<option value="0">- Примеры ценовых предложений -</option>
+														<option value="1">Минимальный уровень технической поддержки оператора ШПД</option>
+														<option value="2">Проект по запуску IP сети предприятия</option>
+														<option value="3">Проект по оптимизации сети</option>
 													</select>
 												</div>
-											</div>								
+											</div>				
+											<div class="12u$">
+												  <style>
+												   textarea { resize: none; }
+												  </style>
+												<textarea name="desc" id="desc" readonly="readonly"  maxlength="250">
+												</textarea>	
+											</div>				
 						    </p>
 							<p>
 
