@@ -31,6 +31,10 @@
 			h1 {
 				margin-top: 4em;
 			}
+			/*#operator, #enterprise, #order247, #build {*/
+			h2 {
+				margin-top: 10em;
+			}
 			.next {
 				    position: absolute;
     				right: 1em;
@@ -78,6 +82,7 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
+							<span id="247">&nbsp;</span>	
 							<h1 style="margin-top: 1em;">Техническая поддержка 24х7</h1>
 							<!-- Text -->
 								<section>
@@ -87,7 +92,7 @@
 										<div class="12u$">
 											<ul class="actions vertical">
 												<lh>от 60 000 рублей в месяц</lh>
-												<li><a href="#order247" class="button special fit" onclick="$('#order247').toggle();">Выслать договор</a></li>
+												<li><a href="#order247" class="button special fit" onclick="$('#order247').show('slow');">Выслать договор</a></li>
 												<li class="next"><a href="#corp">следующий \/</a></li>
 											</ul>
 										</div>									
@@ -106,7 +111,8 @@
 											<div class="12u$">
 												<ul class="actions">
 													<li><input type="submit" value="Отправить запрос" class="special" /></li>
-													<li><input type="reset" value="Отмена" onclick="$('#order247').toggle();" /></li>
+													<!-- <li><input type="reset" value="Отмена" onclick="$('#order247').hide('slow');" /></li> -->
+													<li><a href="#247" type="reset" onclick="$('#order247').hide('slow');" class="button fit" style="margin:0;">Отмена</a></li>
 												</ul>
 											</div>
 										</div>
@@ -122,13 +128,14 @@
 										<div class="12u$">
 											<ul class="actions vertical">
 												<lh>от 100 000 рублей в месяц</lh>
-												<li><a href="#enterprise" class="button special fit" onclick="$('#enterprise').toggle();">Выслать договор</a></li>
+												<li><a href="#enterprise" class="button special fit" onclick="$('#enterprise').show('slow');">Выслать договор</a></li>
 												<li class="next"><a href="#oper">следующий \/</a></li>
 											</ul>
 										</div>									
 								</section>
 							<!-- Form -->
 								<section style="display: none;" id="enterprise" name="enterprise">
+									<span>&nbsp;</span>	
 									<h2>Форма заказа</h2>
 									<form method="post" action="#">
 										<div class="row uniform">
@@ -141,7 +148,8 @@
 											<div class="12u$">
 												<ul class="actions">
 													<li><input type="submit" value="Отправить запрос" class="special" /></li>
-													<li><input type="reset" value="Отмена" onclick="$('#enterprise').toggle();" /></li>
+													<!-- <li><input type="reset" value="Отмена" onclick="$('#enterprise').toggle();" /></li> -->
+													<li><a href="#corp" type="reset" onclick="$('#enterprise').hide('slow');" class="button fit" style="margin:0;">Отмена</a></li>
 												</ul>
 											</div>
 										</div>
@@ -159,7 +167,7 @@
 										<div class="12u$">
 											<ul class="actions vertical">
 												<lh>от 140 000 рублей в месяц</lh>
-												<li><a href="#operator" class="button special fit" onclick="$('#operator').toggle();">Выслать договор</a></li>
+												<li><a href="#operator" class="button special fit" onclick="$('#operator').show('slow');">Выслать договор</a></li>
 												<li class="next"><a href="#boui">следующий \/</a></li>
 											</ul>
 										</div>									
@@ -178,7 +186,8 @@
 											<div class="12u$">
 												<ul class="actions">
 													<li><input type="submit" value="Отправить запрос" class="special" /></li>
-													<li><input type="reset" value="Отмена" onclick="$('#operator').toggle();" /></li>
+													<!-- <li><input type="reset" value="Отмена" onclick="$('#operator').toggle();" /></li> -->
+													<li><a href="#oper" type="reset" onclick="$('#operator').hide('slow');" class="button fit" style="margin:0;">Отмена</a></li>
 												</ul>
 											</div>
 										</div>
@@ -195,7 +204,7 @@
 										<div class="12u$">
 											<ul class="actions vertical">
 												<lh>от 300 000 рублей (от 2000 рублей/час)</lh>
-												<li><a href="#build" class="button special fit" onclick="$('#build').toggle();">Выслать договор</a></li>
+												<li><a href="#build" class="button special fit" onclick="$('#build').show('slow');">Выслать договор</a></li>
 											</ul>
 										</div>									
 								</section>
@@ -213,7 +222,8 @@
 											<div class="12u$">
 												<ul class="actions">
 													<li><input type="submit" value="Отправить запрос" class="special" /></li>
-													<li><input type="reset" value="Отмена" onclick="$('#build').toggle();" /></li>
+													<!-- <li><input type="reset" value="Отмена" onclick="$('#build').toggle();" /></li> -->
+													<li><a href="#boui" type="reset" onclick="$('#build').hide('slow');" class="button fit" style="margin:0;">Отмена</a></li>
 												</ul>
 											</div>
 										</div>
