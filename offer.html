@@ -13,6 +13,29 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style type="text/css">
+			lh {
+				    font-size: 1.75em;
+				    font-weight: 700;
+				    line-height: 1.3;
+				    margin: 0 0 1em 0;
+				    letter-spacing: -0.035em;
+			}	
+			#wrapper > #main > .inner {
+		    	width: 65%;
+		    }		
+		    @media screen and (max-width: 736px) {
+			#wrapper > #main > .inner {
+		    	width: 100%;
+			}}
+			h1 {
+				margin-top: 4em;
+			}
+			.next {
+				    position: absolute;
+    				right: 1em;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- Wrapper -->
@@ -55,16 +78,17 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Техническая поддержка 24х7</h1>
+							<h1 style="margin-top: 1em;">Техническая поддержка 24х7</h1>
 							<!-- Text -->
 								<section>
-									<blockquote class="6u 12u$(medium)">
+									<blockquote class="12u$">
 										Базовый тариф для небольших сетей: круглосуточная техподдержка, реакция в течение 15 минут, организация мониторинга в облаке.
 									</blockquote>
-									<h3>от 60 000 рублей в месяц</h3>
-										<div class="6u 12u$(medium)">
+										<div class="12u$">
 											<ul class="actions vertical">
-												<li><a href="#order247" class="button special fit" onclick="$('#order247').toggle();">Заказать</a></li>
+												<lh>от 60 000 рублей в месяц</lh>
+												<li><a href="#order247" class="button special fit" onclick="$('#order247').toggle();">Выслать договор</a></li>
+												<li class="next"><a href="#corp">следующий \/</a></li>
 											</ul>
 										</div>									
 								</section>
@@ -88,17 +112,18 @@
 										</div>
 									</form>
 								</section>
-
+							<span id="corp">&nbsp;</span>	
 							<h1>Корпорация</h1>
 							<!-- Text -->
 								<section>
-									<blockquote class="6u 12u$(medium)">
+									<blockquote class="12u$">
 										Основной тариф: проанализируем текущее состояние сети, спланируем отказоустойчивую инфраструктуру, развернем и настроим систему мониторинга, создадим и поддержим в актуальном состоянии сетевую схему, организуем 24х7 поддержку инфраструктуры.
 									</blockquote>
-									<h3>от 100 000 рублей в месяц</h3>
-										<div class="6u 12u$(medium)">
+										<div class="12u$">
 											<ul class="actions vertical">
-												<li><a href="#enterprise" class="button special fit" onclick="$('#enterprise').toggle();">Заказать</a></li>
+												<lh>от 100 000 рублей в месяц</lh>
+												<li><a href="#enterprise" class="button special fit" onclick="$('#enterprise').toggle();">Выслать договор</a></li>
+												<li class="next"><a href="#oper">следующий \/</a></li>
 											</ul>
 										</div>									
 								</section>
@@ -124,16 +149,18 @@
 								</section>
 
 
+							<span id="oper">&nbsp;</span>	
 							<h1>Оператор связи</h1>
 							<!-- Text -->
 								<section>
-									<blockquote class="6u 12u$(medium)">
+									<blockquote class="12u$">
 										 Тариф для операторов связи: Полное сопровождение сетевой инфраструктуры. Прописанное в SLA гарантированное время решения проблем. Анализ производительности и непрерывности предоставлния сетевых услуг. Работы по реконфигурации и оптимизации сети. Мониторинг и поддержка. 	 
 									</blockquote>
-									<h3>от 140 000 рублей в месяц</h3>
-										<div class="6u 12u$(medium)">
+										<div class="12u$">
 											<ul class="actions vertical">
-												<li><a href="#operator" class="button special fit" onclick="$('#operator').toggle();">Заказать</a></li>
+												<lh>от 140 000 рублей в месяц</lh>
+												<li><a href="#operator" class="button special fit" onclick="$('#operator').toggle();">Выслать договор</a></li>
+												<li class="next"><a href="#boui">следующий \/</a></li>
 											</ul>
 										</div>									
 								</section>
@@ -158,6 +185,40 @@
 									</form>
 								</section>
 
+							<span id="boui">&nbsp;</span>	
+							<h1>Проектирование сети</h1>
+							<!-- Text -->
+								<section>
+									<blockquote class="12u$">
+										 Проектирование сети любой сложности. Анализ требований и создание проектной документации. Планирование адресных пространств и маршрутизации. Разработка требований к оборудованию, оптическим и кабельным сетям. Формирование требований к системам мониторинга. Авторский надзор за исполнителями. 	 
+									</blockquote>
+										<div class="12u$">
+											<ul class="actions vertical">
+												<lh>от 300 000 рублей (от 2000 рублей/час)</lh>
+												<li><a href="#build" class="button special fit" onclick="$('#build').toggle();">Выслать договор</a></li>
+											</ul>
+										</div>									
+								</section>
+							<!-- Form -->
+								<section style="display: none;" id="build" name="build">
+									<h2>Форма заказа</h2>
+									<form method="post" action="#">
+										<div class="row uniform">
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="service" id="service" value="Проектирование сети" readonly />
+											</div>
+											<div class="12u$">
+												<input type="email" name="email" id="email" value="" placeholder="Email" />
+											</div>
+											<div class="12u$">
+												<ul class="actions">
+													<li><input type="submit" value="Отправить запрос" class="special" /></li>
+													<li><input type="reset" value="Отмена" onclick="$('#build').toggle();" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
 
 						</div>
 					</div>
